@@ -25,4 +25,4 @@ jobs:
           echo $PATH
       - name: slurm demo
         run: |
-          srun -p caif_rd --cpus-per-task=2 nvidia-smi
+          sh ./slurm.sh
