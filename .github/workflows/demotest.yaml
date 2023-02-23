@@ -25,7 +25,8 @@ jobs:
           echo $PATH
       - name: tmp
         run: |
-           pwd
+           source /mnt/petrelfs/qa-caif-cicd/env/ray1.13.0
+           pip show ray
       - name: slurm demo
         run: |
           sh ./slurm.sh
