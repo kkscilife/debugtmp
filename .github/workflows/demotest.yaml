@@ -24,6 +24,7 @@ jobs:
         run: |
           # stop the build if there are Python syntax errors or undefined names
           echo $PATH
+          pwd
       - name: tmp
         run: |
            source /mnt/petrelfs/qa-caif-cicd/env/ray1.13.0
