@@ -20,7 +20,7 @@ jobs:
         run: |
           source /mnt/petrelfs/qa-caif-cicd/env/ray1.13.0
           python ./demo.py
-      - name: kk echo
+      - name: kk echo demo
         run: |
           # stop the build if there are Python syntax errors or undefined names
           echo $PATH
