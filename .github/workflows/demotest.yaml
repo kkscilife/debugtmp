@@ -23,13 +23,12 @@ jobs:
       - name: kk echo demo
         run: |
           # stop the build if there are Python syntax errors or undefined names
-          echo $PATH
+          sh ./tmp.sh
           pwd
       - name: tmp
         run: |
            source /mnt/petrelfs/qa-caif-cicd/env/ray1.13.0
            cd /mnt/petrelfs/qa-caif-cicd/tmp
-           flake8 ./uniscale
       - name: slurm demo
         run: |
           sh ./slurm.sh
