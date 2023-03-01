@@ -28,7 +28,7 @@ jobs:
       - name: tmp
         run: |
            source /mnt/petrelfs/qa-caif-cicd/env/ray1.13.0
-           pip show ray
+           pre-commit run --all-files
       - name: slurm demo
         run: |
           sh ./slurm.sh
