@@ -14,6 +14,7 @@ jobs:
 
     steps:
       - run: export PATH=/mnt/petrelfs/caifcicd/dev/git/git-2.9.3/bin:$PATH
+          git config --global --add safe.directory $(realpath .)
       
       - uses: actions/checkout@v3
       - run: |
@@ -21,6 +22,7 @@ jobs:
           whereis git
           ls -a
           git --version
+          git config --global --add safe.directory $(realpath .)
           git branch
       #- name: Set up Python ${{ matrix.python-version }}
         #uses: actions/setup-python@v4
