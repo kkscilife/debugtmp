@@ -20,7 +20,6 @@ jobs:
           echo $PATH
           whereis git
           ls -a
-          git init
           git --version
           git branch
       #- name: Set up Python ${{ matrix.python-version }}
