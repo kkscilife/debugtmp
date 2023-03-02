@@ -15,7 +15,7 @@ jobs:
     steps:
       - run: export PATH=/mnt/petrelfs/caifcicd/dev/git/git-2.9.3/bin:$PATH
       
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - run: |
           echo $PATH
           whereis git
