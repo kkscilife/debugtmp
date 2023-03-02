@@ -22,7 +22,6 @@ jobs:
           ls -a
           git init
           git --version
-          git checkout HEAD^
           git branch
       #- name: Set up Python ${{ matrix.python-version }}
         #uses: actions/setup-python@v4
