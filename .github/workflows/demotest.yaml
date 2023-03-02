@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          token: ${{ github.token }}
+          token: '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'
       - run: git checkout HEAD^
       #- name: Set up Python ${{ matrix.python-version }}
         #uses: actions/setup-python@v4
