@@ -14,7 +14,9 @@ jobs:
       - uses: actions/checkout@v3
         with:
           token: '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'
-      - run: git checkout HEAD^
+      - run: |
+          export PATH=/mnt/petrelfs/caifcicd/dev/git/git-2.9.3/bin:$PATH
+          git checkout HEAD^
       #- name: Set up Python ${{ matrix.python-version }}
         #uses: actions/setup-python@v4
         #with:
