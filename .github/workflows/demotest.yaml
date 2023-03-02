@@ -5,7 +5,7 @@ on: [push]
 jobs:
   build:
 
-    runs-on: ktest
+    runs-on: runner4
     permissions:
       repository-projects: write
     strategy:
