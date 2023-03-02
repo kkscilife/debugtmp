@@ -33,7 +33,7 @@ jobs:
           source /mnt/petrelfs/qa-caif-cicd/env/ray1.13.0
           echo $USER
           python ./demo.py
-          ls
+          ls -a
           pwd
       - name: kk echo demo
         run: |
