@@ -15,6 +15,7 @@ jobs:
         with:
           token: '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'
       - run: |
+          git --version
           export PATH=/mnt/petrelfs/caifcicd/dev/git/git-2.9.3/bin:$PATH
           git checkout HEAD^
       #- name: Set up Python ${{ matrix.python-version }}
