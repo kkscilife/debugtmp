@@ -43,6 +43,7 @@ jobs:
       - name: tmp
         run: |
            source /mnt/petrelfs/qa-caif-cicd/env/ray1.13.0
+           echo $PATH
            cd /mnt/petrelfs/qa-caif-cicd/tmp
       - name: slurm demo
         run: |
