@@ -14,6 +14,7 @@ jobs:
 
     steps:
       - run: export PATH=/mnt/petrelfs/caifcicd/dev/git/git-2.9.3/bin:$PATH
+          echo ${{ GITHUB_WORKSPACE }}
       
       - uses: actions/checkout@v3
       - run: |
