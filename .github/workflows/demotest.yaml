@@ -19,6 +19,7 @@ jobs:
       - name: run demo python
         run: |
           source /mnt/petrelfs/qa-caif-cicd/env/ray1.13.0
+          echo $USER
           python ./demo.py
       - name: kk echo demo
         run: |
