@@ -5,7 +5,7 @@ on: [push]
 jobs:
   build:
 
-    runs-on: runner2
+    runs-on: nohup
     strategy:
       matrix:
         python-version: ["3.9"]
