@@ -5,7 +5,7 @@ on: [push]
 jobs:
   build:
 
-    runs-on: runner6
+    runs-on: nohup
     permissions:
       repository-projects: write
     strategy:
@@ -38,8 +38,8 @@ jobs:
       - name: kk echo demo
         run: |
           # stop the build if there are Python syntax errors or undefined names
+          cat ./tmp.sh
           sh ./tmp.sh
-          pwd
       - name: tmp
         run: |
            source /mnt/petrelfs/qa-caif-cicd/env/ray1.13.0
