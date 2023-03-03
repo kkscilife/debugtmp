@@ -5,7 +5,7 @@ on: [push]
 jobs:
   build:
 
-    runs-on: runner6
+    runs-on: nohup
     permissions:
       repository-projects: write
     strategy:
